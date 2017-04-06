@@ -1,4 +1,9 @@
 "use strict";
 
-var earth = "Земля";
-var user = "Петя";
+var name = prompt('Каково «официальное» название JavaScript?', '');
+
+if (name == 'ECMAScript') {
+  alert('Да, верно');
+} else {
+  alert('Неправильно');
+}
