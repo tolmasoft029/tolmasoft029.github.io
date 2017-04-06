@@ -1,6 +1,4 @@
 "use strict";
 
-var name = "Василий";
-var admin = name;
-
-alert(admin);
+var earth = "Земля";
+var user = "Петя";
