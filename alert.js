@@ -1,11 +1,21 @@
 "use strict";
 
-var num = prompt('Введите любое число', '');
+var login, pass;
 
-if (num > 0) {
-  alert(1);
-} else if (num < 0){
-  alert(-1);
+login = prompt('Кто пришел?', '');
+
+if (login == 'Админ') {
+	pass = prompt('Пароль?', '');
+
+	if (pass == 'Черный Властелин') {
+		alert('Добро пожаловать!');
+	} else if (pass == null) {
+		alert('Вход отменен');
+	} else {
+		alert('Пароль неверен');
+	}
+} else if (login == null) {
+	alert('Вход отменен');
 } else {
-	alert(0);
+	alert('Я вас не знаю');
 }
