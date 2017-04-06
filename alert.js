@@ -3,7 +3,7 @@
 var name = prompt('Каково «официальное» название JavaScript?', '');
 
 if (name == 'ECMAScript') {
-  alert('Да, верно');
+  alert('Верно!');
 } else {
-  alert('Неправильно');
+  alert('Не знаете? «ECMAScript»!');
 }
