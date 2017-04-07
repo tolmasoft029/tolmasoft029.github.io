@@ -1,7 +1,7 @@
 "use strict";
-var i = 0;
+var num;
+while (true) {
+  num = prompt('Введите число большее 100','');
 
-while (i < 3) {
-  alert( "номер " + i + "!" );
-  i++
+  if(num > 100 || !num) break;
 }
