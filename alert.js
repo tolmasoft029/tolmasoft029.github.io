@@ -1,7 +1,7 @@
 "use strict";
 
-for (var i = 0; i < 11; i++) {
-	if (!i % 2) continue;
+for (var i = 1; i < 11; i++) {
+	if (i % 2 !== 0) continue;
 
 	alert(i);
 }
