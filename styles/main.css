@@ -16,7 +16,7 @@
 	left: -3px;
     top: 530px;
 }
-.down_magaz {
+a.down_magaz {
 	position: absolute;
 	z-index: 2;
 	left: 608px;
@@ -26,6 +26,6 @@
     width: 73px; /* Ширина рисунка в пикселах */
     height: 31px; /* Высота рисунка */
 }
-.down_magaz:hover {
+a.down_magaz:hover {
    	background-position: 0 -31px; /* Смещение фона */
 }
