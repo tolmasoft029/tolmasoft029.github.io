@@ -111,6 +111,17 @@
     top: 24px;
 }
 
+#invite_mask {
+	position: absolute;
+  	display: block;
+  	z-index: 2;
+  	-webkit-mask-image: url(../images/top_invite_mask.png);
+	-webkit-mask-position: center center;
+	-webkit-mask-repeat: no-repeat;
+	left: 40px;
+    top: 41px;
+}
+
 #kek {
 	position: absolute;
 	z-index: 2;
