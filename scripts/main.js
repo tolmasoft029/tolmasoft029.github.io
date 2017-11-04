@@ -1,7 +1,4 @@
-VK.init(onInit, onError, '5.69'); 
-
-function onInit(){
-	var params = window
+var params = window
     .location
     .search
     .replace('?','')
@@ -14,6 +11,11 @@ function onInit(){
         },
         {}
     );
+
+VK.init(onInit, onError, '5.69'); 
+
+function onInit(){
+	
     alert(params['viewer_id']);
 	VK.api("users.get", {user_ids:"112354918", fields:"photo_50"}, onPhoto);
 }
