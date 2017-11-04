@@ -4,7 +4,6 @@ var params = window.location.search.replace('?','').split('&').reduce(function(p
 VK.init(onInit, onError, '5.69'); 
 
 function onInit(){
-	alert('Init');
 	VK.api("users.get", {user_ids:params['viewer_id'], fields:"photo_50"}, onPhoto);
 }
 
@@ -13,16 +12,7 @@ function onError(){
 }
 
 function onPhoto(data){
-	alert(data['response'][0]['photo_50']);
 	var link = data['response'][0]['photo_50'];
-
 	var myDiv = document.getElementById("kek");
-	var divClone = myDiv.cloneNode(true);
-
-	divClone.style.top = 100+'px';
-
-	document.body.appendChild(divClone);
-	
 	myDiv.getElementsByTagName("img")[1].src = link;
-	divClone.getElementsByTagName("img")[1].src = link;
 }
