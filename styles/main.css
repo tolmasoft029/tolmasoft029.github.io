@@ -96,7 +96,7 @@
 
 #top_slot_level {
 	font-family: Arial, sans-serif;
-	font-color: white;
+	color: white;
 	font-size: 11pt;
 	position: absolute;
 	z-index: 2;
