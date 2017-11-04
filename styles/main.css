@@ -30,3 +30,20 @@
     top: 543px;
     cursor: pointer;
 }
+
+#down_profile {
+	position: absolute;
+	z-index: 2;
+	left: 681px;
+    top: 578px;
+    cursor: pointer;
+}
+
+
+#down_mods {
+	position: absolute;
+	z-index: 2;
+	left: 610px;
+    top: 613px;
+    cursor: pointer;
+}
