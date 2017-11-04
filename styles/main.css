@@ -101,9 +101,12 @@
     top: 94px;
 }
 
-#kek {
+#top_slot_name {
+	font-family: Arial, sans-serif;
+	color: white;
+	font-size: 9pt;
 	position: absolute;
-	left: 24px;
-    top: 537px;
-    cursor: pointer;
+	z-index: 2;
+	left: 64px;
+    top: 50px;
 }

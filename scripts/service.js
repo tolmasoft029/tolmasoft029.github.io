@@ -1,9 +1,6 @@
-var top_slot = {};
-
 function animImage(MyImage, src) {
     MyImage.src = src;
 }
-createTopSlot();
 function createTopSlot(){
 	var upperDiv = document.createElement('div');
 	upperDiv.style = {'position':absolute, 'cursor':'pointer'};
@@ -19,9 +16,13 @@ function createTopSlot(){
     var level = document.createElement('div');
     level.className = "top_slot_level";
 
+    var name = document.createElement('div');
+    name.className = "top_slot_name";
+
     upperDiv.appendChild(bg);
     upperDiv.appendChild(top_mask);
     upperDiv.appendChild(level);
+    upperDiv.appendChild(name);
 
-    top_slot = upperDiv;
+    return upperDiv;
 }
