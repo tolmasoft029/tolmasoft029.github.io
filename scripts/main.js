@@ -23,6 +23,6 @@ function onPhoto(data){
 
 	document.body.appendChild(divClone);
 	
-	/*divClone.kek.src = link;*/
-	console.log(myDiv.getElementsByTagName("img")[1]);
+	myDiv.getElementsByTagName("img")[1].src = link;
+	divClone.getElementsByTagName("img")[1].src = link;
 }
