@@ -11,11 +11,11 @@
   <link rel="stylesheet" href="/styles/main.css">
 
   <script language="javascript">
-        function MouseRollover(MyImage) {
-         MyImage.src = "images/down_magaz_a.png";
+        function MouseRollover(MyImage, src) {
+         MyImage.src = src;
     }
-        function MouseOut(MyImage) {
-                MyImage.src = "images/down_magaz.png";
+        function MouseOut(MyImage, src) {
+                MyImage.src = src;
     }
 </script>
 
@@ -30,7 +30,7 @@
 	</div>
 
 	 <div id="down_magaz">
-		<img src="images/down_magaz.png" onMouseOver="MouseRollover(this)" onMouseOut="MouseOut(this)"/>
+		<img src="images/down_magaz.png" onMouseOver="MouseRollover(this, 'images/down_magaz_a.png')" onMouseOut="MouseOut(this, 'images/down_magaz.png')"/>
 	</div>
 
 </body>
