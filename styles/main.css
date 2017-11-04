@@ -23,3 +23,10 @@
     top: 578px;
     cursor: pointer;
 }
+#down_zona {
+	position: absolute;
+	z-index: 2;
+	left: 610px;
+    top: 543px;
+    cursor: pointer;
+}
