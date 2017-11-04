@@ -3,7 +3,7 @@ var top_slot = {};
 function animImage(MyImage, src) {
     MyImage.src = src;
 }
-
+createTopSlot();
 function createTopSlot(){
 	var upperDiv = document.createElement('div');
 	upperDiv.style.position = 'absolute'; 
