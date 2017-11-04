@@ -9,10 +9,9 @@ function onError(){
 }
 
 function onPhoto(data){
-	alert(data['response'][0]['id']);
-	/*var pc = document.getElementById("pic_cntr");
+	var pc = document.getElementById("pic_cntr");
 var pic = document.createElement("IMG");
-pic.src = data[0]['photo_50'];
-pc.appendChild(pic);*/
+pic.src = data['response'][0]['photo_50'];
+pc.appendChild(pic);
 
 }
