@@ -1,7 +1,5 @@
 var top_slot = {};
 
-createTopSlot();
-
 function animImage(MyImage, src) {
     MyImage.src = src;
 }
