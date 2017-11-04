@@ -23,5 +23,5 @@ function onPhoto(data){
 
 	document.body.appendChild(divClone);
 	
-	myDiv.getElementById('top_mask').src = link;
+	document.getElementById('top_mask').src = link;
 }
