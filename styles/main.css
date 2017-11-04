@@ -10,7 +10,8 @@
     pointer-events: none;
 }
 
-.down_panel {
-	margin: -3;
-    padding: 530;
+#down_panel {
+	z-index: 1;
+	left: -3px;
+    top: 530px;
 }
