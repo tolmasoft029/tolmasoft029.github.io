@@ -81,6 +81,7 @@
 }
 
 #top_mask {
+	z-index: 2;
   	display: block;
   	-webkit-mask-image: url(../images/slot_top_mask.png);
 	mask-image: url(../images/slot_top_mask.png);
