@@ -23,7 +23,7 @@ function onPhoto(data){
 
 	document.body.appendChild(divClone);
 	
-	/*myDiv.kek.src = link;
-	divClone.kek.src = link;*/
+	myDiv.top_mask.src = link;
+	/*divClone.kek.src = link;*/
 	console.log(myDiv);
 }
