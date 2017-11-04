@@ -92,10 +92,3 @@
 	left: 0px;
     top: 0px;
 }
-
-#upper {
-	position: absolute;
-	z-index: 2;
-	left: 100px;
-    top: 100px;
-}
