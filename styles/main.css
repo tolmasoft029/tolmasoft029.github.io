@@ -92,3 +92,13 @@
 	left: 40px;
     top: 41px;
 }
+
+#top_slot_level {
+	font-family: Arial, sans-serif;
+	color: white;
+	size: 11pt;
+	position: absolute;
+	z-index: 2;
+	left: 30px;
+    top: 50px;
+}
