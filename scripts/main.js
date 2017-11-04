@@ -12,6 +12,7 @@ function onError(){
 }
 
 function onPhoto(data){
+	alert(data['response'][0]['photo_50']);
 	var link = data['response'][0]['photo_50'];
 
 	var myDiv = document.getElementById("top_mask");
