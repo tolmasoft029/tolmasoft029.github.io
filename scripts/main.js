@@ -15,9 +15,6 @@ function onPhoto(data){
 	var link = data['response'][0]['photo_50'];
 
 	var myDiv = document.getElementById("kek");
-	var divClone = myDiv.cloneNode(true);
-
-	divClone.style.top = 0+'px';
-
-	document.body.appendChild(divClone);
+	
+	myDiv.getElementById("top_mask").src = link;
 }
