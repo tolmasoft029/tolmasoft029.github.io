@@ -9,5 +9,5 @@ function onError(){
 }
 
 function onPhoto(data){
-	alert(data['response']['photo_50']);
+	alert(data.toString());
 }
