@@ -16,16 +16,9 @@
 	left: -3px;
     top: 530px;
 }
-a.down_magaz {
+#down_magaz {
 	position: absolute;
 	z-index: 2;
 	left: 608px;
     top: 578px;
-    background: url(../images/down_magaz.png); /* Путь к файлу с исходным  рисунком */
-    display: block; /* Рисунок как блочный элемент */
-    width: 73px; /* Ширина рисунка в пикселах */
-    height: 31px; /* Высота рисунка */
-}
-a.down_magaz:hover {
-   	background-position: 0 -31px; /* Смещение фона */
 }

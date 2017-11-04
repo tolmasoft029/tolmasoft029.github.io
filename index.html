@@ -10,6 +10,15 @@
 
   <link rel="stylesheet" href="/styles/main.css">
 
+  <script language="javascript">
+        function MouseRollover(MyImage) {
+         MyImage.src = "images/down_magaz_a.png";
+    }
+        function MouseOut(MyImage) {
+                MyImage.src = "images/down_magaz.png";
+    }
+</script>
+
 </head>
 
 <body>
@@ -20,7 +29,9 @@
 		<img class="locked" src="images/down_panel.png"/>
 	</div>
 
-	 <p><a href="#" class="down_magaz"> </a></p>
+	 <div id="down_magaz">
+		<img class="locked" src="images/down_magaz.png" onMouseOver="MouseRollover(this)" onMouseOut="MouseOut(this)"/>
+	</div>
 
 </body>
 
