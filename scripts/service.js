@@ -11,9 +11,11 @@ function createTopSlot(){
 	upperDiv.style.position = 'absolute'; 
     upperDiv.style.cursor = 'pointer';
 
-    var bg = upperDiv.createElement('img');
+    var bg = document.createElement('img');
     bg.src = "../images/slot_top.png";
     bg.className = "locked";
+
+    upperDiv.appendChild(bg);
 
     top_slot = upperDiv;
 
