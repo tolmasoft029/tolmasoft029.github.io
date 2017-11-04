@@ -122,6 +122,14 @@
     top: 577px;
 }
 
+#menu_pda {
+	position: absolute;
+	z-index: 2;
+	left: 433px;
+    top: 569px;
+    cursor: pointer;
+}
+
 #kek {
 	position: absolute;
 	z-index: 2;
