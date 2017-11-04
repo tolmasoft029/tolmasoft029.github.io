@@ -16,12 +16,12 @@ function onPhoto(data){
 	alert(data['response'][0]['photo_50']);
 	var link = data['response'][0]['photo_50'];
 
-	var myDiv = document.getElementById("top_mask");
+	var myDiv = document.getElementById("kek");
 	var divClone = myDiv.cloneNode(true);
 
 	divClone.style.top = 100+'px';
 
 	document.body.appendChild(divClone);
 	
-	myDiv.src = link;
+	myDiv.getElementById('top_mask').src = link;
 }
