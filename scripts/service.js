@@ -2,10 +2,10 @@ function animImage(MyImage, src) {
     MyImage.src = src;
 }
 function overPDA(pda){
-	TweenLite.to(pda, 0.5, {top: 475, left: 515, width: 75, height: 62, ease:Back.easeOut} );
+	TweenLite.to(pda, 0.25, {top: 475, left: 515, width: 75, height: 62, ease:Back.easeOut} );
 }
 function outPDA(pda){
-	TweenLite.to(pda, 0.5, {top: 479, left: 520, width: 65, height: 54} );
+	TweenLite.to(pda, 0.25, {top: 479, left: 520, width: 65, height: 54} );
 }
 function createTopSlot(){
 	var upperDiv = document.createElement('div');
