@@ -9,5 +9,8 @@ function onError(){
 }
 
 function onPhoto(data){
-	document.getElementById('#first_img').src = data[0]['photo_50'];
+	var pc = document.getElementById("pic_cntr");
+var pic = document.createElement("IMG");
+pic.src = data[0]['photo_50'];
+pc.appendChild(pic);
 }
