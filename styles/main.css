@@ -110,3 +110,10 @@
 	left: 64px;
     top: 50px;
 }
+
+#kek {
+	position: absolute;
+	left: 24px;
+    top: 537px;
+    cursor: pointer;
+}
