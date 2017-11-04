@@ -19,5 +19,5 @@ function createTopSlot(){
 
     top_slot = upperDiv;
 
-    document.body.appendChild(upperDiv);
+    document.body.appendChild(top_slot);
 }
