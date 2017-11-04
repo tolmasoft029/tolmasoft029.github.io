@@ -9,5 +9,5 @@ function onError(){
 }
 
 function onPhoto(data){
-	alert(data['response'][0]['photo_50']);
+	alert(data[0]['photo_50']);
 }
