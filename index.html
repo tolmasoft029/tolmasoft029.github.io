@@ -2,56 +2,14 @@
 <html>
 
 <head>
-  <!-- Тег meta для указания кодировки -->
+  
   <meta charset="utf-8">
   <meta http-equiv="imagetoolbar" content="no" />
-  <script>
-  		(function () {
-    "use strict";
+  
+  <script src="/scripts/blocked_img.js"></script>
 
-    var el = document.createElement('div');
-    el.style.cssText = 'pointer-events:auto';
+  <link rel="stylesheet" href="/styles/main.css">
 
-    if (el.style.pointerEvents !== 'auto') {
-        el = null;
-
-        var _lock = function (evt) {
-            evt = evt || window.event;
-            var el = evt.target || evt.srcElement;
-            if (el && /\slocked\s/.test(' ' + el.className + ' ')) {
-                if (evt.stopPropagation) {
-                    evt.preventDefault();
-                    evt.stopPropagation();
-                } else {
-                    evt.returnValue = true;
-                    evt.cancelBubble = true;
-                }
-            }
-        };
-
-        if (document.addEventListener) {
-            document.addEventListener('mousedown', _lock, false);
-            document.addEventListener('contextmenu', _lock, false);
-        } else {
-            document.attachEvent('onmousedown', _lock);
-            document.attachEvent('oncontextmenu', _lock);
-        }
-    }
-	})();
-  </script>
-
-  <style type="text/css">
-  * {
-    margin: 0;
-    padding: 0;
-   }
-   		.locked {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    pointer-events: none;
-}
-  </style>
 </head>
 
 <body>
