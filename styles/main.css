@@ -83,6 +83,7 @@
 #top_mask {
 	position: absolute;
   	display: block;
+  	z-index: 2;
   	-webkit-mask-image: url(../images/slot_top_mask.png);
 	mask-image: url(../images/slot_top_mask.png);
 	-webkit-mask-position: center center;
