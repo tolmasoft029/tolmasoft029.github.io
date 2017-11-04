@@ -8,8 +8,8 @@ function animImage(MyImage, src) {
 
 function createTopSlot(){
 	var upperDiv = document.createElement('div');
-	div.style.position = 'absolute'; 
-    div.style.cursor = 'pointer';
+	upperDiv.style.position = 'absolute'; 
+    upperDiv.style.cursor = 'pointer';
 
     var bg = upperDiv.createElement('img');
     bg.src = "../images/slot_top.png";
