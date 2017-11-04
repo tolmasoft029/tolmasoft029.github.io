@@ -47,3 +47,35 @@
     top: 613px;
     cursor: pointer;
 }
+
+#down_prev {
+	position: absolute;
+	z-index: 2;
+	left: 16px;
+    top: 569px;
+    cursor: pointer;
+}
+
+#down_start {
+	position: absolute;
+	z-index: 2;
+	left: 12px;
+    top: 604px;
+    cursor: pointer;
+}
+
+#down_next {
+	position: absolute;
+	z-index: 2;
+	left: 433px;
+    top: 569px;
+    cursor: pointer;
+}
+
+#down_end {
+	position: absolute;
+	z-index: 2;
+	left: 431px;
+    top: 604px;
+    cursor: pointer;
+}
