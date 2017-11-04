@@ -5,7 +5,7 @@ function onInit(){
 }
 
 function onError(){
-
+	alert("onError");
 }
 
 function onPhoto(data){
