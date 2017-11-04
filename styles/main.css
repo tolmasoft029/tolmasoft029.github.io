@@ -82,7 +82,6 @@
 
 #top_mask {
 	position: absolute;
-	z-index: 2;
   	display: block;
   	-webkit-mask-image: url(../images/slot_top_mask.png);
 	mask-image: url(../images/slot_top_mask.png);
@@ -90,4 +89,11 @@
 	mask-position: center center;
 	-webkit-mask-repeat: no-repeat;
 	mask-repeat: no-repeat;
+}
+
+#upper {
+	position: absolute;
+	z-index: 2;
+	left: 100px;
+    top: 100px;
 }
