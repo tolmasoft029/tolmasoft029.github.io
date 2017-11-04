@@ -6,17 +6,22 @@ function animImage(MyImage, src) {
 createTopSlot();
 function createTopSlot(){
 	var upperDiv = document.createElement('div');
-	upperDiv.style.position = 'absolute'; 
-    upperDiv.style.cursor = 'pointer';
-    upperDiv.style['z-index'] = '2';
+	upperDiv.style = {'position':absolute, 'cursor':'pointer'};
 
     var bg = document.createElement('img');
     bg.src = "../images/slot_top.png";
     bg.className = "locked";
 
+    var def_photo = document.createElement('img');
+    def_photo.src = "../images/top_def.png";
+    def_photo.className = "top_mask";
+
+    var level = document.createElement('div');
+    level.className = "top_slot_level";
+
     upperDiv.appendChild(bg);
+    upperDiv.appendChild(top_mask);
+    upperDiv.appendChild(level);
 
     top_slot = upperDiv;
-
-    document.body.appendChild(top_slot);
 }
