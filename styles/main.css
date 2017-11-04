@@ -79,3 +79,13 @@
     top: 604px;
     cursor: pointer;
 }
+
+#top_mask {
+  	display: block;
+  	-webkit-mask-image: url(../images/slot_top_mask.png);
+	mask-image: url(../images/slot_top_mask.png);
+	-webkit-mask-position: center center;
+	mask-position: center center;
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+}
