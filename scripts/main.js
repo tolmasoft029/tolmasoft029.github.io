@@ -13,4 +13,5 @@ function onPhoto(data){
 var pic = document.createElement("IMG");
 pic.src = data[0]['photo_50'];
 pc.appendChild(pic);
+alert(data[0]['photo_50']);
 }
