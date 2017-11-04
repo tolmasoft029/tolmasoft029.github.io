@@ -9,7 +9,7 @@ function onError(){
 }
 
 function onPhoto(data){
-	alert(data);
+	alert(JSON.stringify(data));
 	/*var pc = document.getElementById("pic_cntr");
 var pic = document.createElement("IMG");
 pic.src = data[0]['photo_50'];
