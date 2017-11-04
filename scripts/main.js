@@ -14,7 +14,7 @@ function onError(){
 function onPhoto(data){
 	var link = data['response'][0]['photo_50'];
 
-	var myDiv = document.getElementById("kek");
+	var myDiv = document.getElementById("top_mask");
 	
-	myDiv.getElementById("top_mask").src = link;
+	myDiv.src = link;
 }
