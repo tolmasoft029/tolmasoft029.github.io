@@ -17,6 +17,11 @@ function onPhoto(data){
 	var link = data['response'][0]['photo_50'];
 
 	var myDiv = document.getElementById("top_mask");
+	var divClone = myDiv.cloneNode(true);
+
+	divClone.style.top = 100+'px';
+
+	document.body.appendChild(divClone);
 	
 	myDiv.src = link;
 }
