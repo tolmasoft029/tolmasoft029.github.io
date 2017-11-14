@@ -10,7 +10,7 @@ function outPDA(pda){
 }
 
 function overUbezh(ubezh){
-    TweenLite.to(ubezh, 0.25, {top: 379, left: 415, width: 87, height: 58, ease:Back.easeOut} );
+    TweenLite.to(ubezh, 0.25, {top: 477, left: 417, width: 87, height: 58, ease:Back.easeOut} );
 }
 function outUbezh(ubezh){
     TweenLite.to(ubezh, 0.25, {top: 482, left: 420, width: 77, height: 51} );
