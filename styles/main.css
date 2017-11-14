@@ -136,6 +136,7 @@
 	left: 420px;
     top: 482px;
     cursor: pointer;
+    filter: progid:DXImageTransform.Microsoft.Blur(enabled = false);
 }
 
 #kek {
