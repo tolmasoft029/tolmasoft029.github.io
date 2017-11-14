@@ -10,10 +10,10 @@ function outPDA(pda){
 }
 
 function overUbezh(ubezh){
-    TweenLite.to(ubezh, 0.25, {top: 475, left: 515, width: 75, height: 62, ease:Back.easeOut} );
+    TweenLite.to(ubezh, 0.25, {top: 415, left: 379, width: 87, height: 58, ease:Back.easeOut} );
 }
 function outUbezh(ubezh){
-    TweenLite.to(ubezh, 0.25, {top: 479, left: 520, width: 65, height: 54} );
+    TweenLite.to(ubezh, 0.25, {top: 420, left: 482, width: 77, height: 51} );
 }
 
 function createTopSlot(){
