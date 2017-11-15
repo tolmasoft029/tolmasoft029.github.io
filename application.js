@@ -5,22 +5,50 @@ function $extend(from, fields) {
 	if( fields.toString !== Object.prototype.toString ) proto.toString = fields.toString;
 	return proto;
 }
-var base_Main = function() {
-	nanofl.MovieClip.call(this,nanofl.Player.library.getItem("scene"));
+var base_Bg1 = function() {
+	nanofl.MovieClip.call(this,nanofl.Player.library.getItem("BG1"));
 };
-base_Main.__super__ = nanofl.MovieClip;
-base_Main.prototype = $extend(nanofl.MovieClip.prototype,{
+base_Bg1.__super__ = nanofl.MovieClip;
+base_Bg1.prototype = $extend(nanofl.MovieClip.prototype,{
 });
-var Main = function() {
-	base_Main.call(this);
+var Bg1 = function() {
+	base_Bg1.call(this);
 };
-Main.__super__ = base_Main;
-Main.prototype = $extend(base_Main.prototype,{
+Bg1.__super__ = base_Bg1;
+Bg1.prototype = $extend(base_Bg1.prototype,{
 	init: function() {
 	}
 	,onEnterFrame: function() {
 	}
 	,onMouseDown: function(e) {
+	}
+});
+var Main = function(symbol) {
+	this.i = 0;
+	this.bg1_mov = new Bg1();
+	this.version = "1.0.0 #1";
+	nanofl.MovieClip.call(this,symbol);
+};
+Main.__super__ = nanofl.MovieClip;
+Main.prototype = $extend(nanofl.MovieClip.prototype,{
+	init: function() {
+		this.addChild(this.bg1_mov);
+		this.getFV(this.stage.canvas.baseURI);
+	}
+	,getFV: function(s) {
+		var a;
+		var b = { };
+		s = s.split("?")[1];
+		a = s.split("&");
+		var _g1 = 0;
+		var _g = a.length;
+		while(_g1 < _g) {
+			var i = _g1++;
+			var a1 = a[i].split("=");
+			b[a1[0]] = a1[1];
+		}
+		console.log(b);
+		return b;
 	}
 });
 createjs.DisplayObject.prototype.setBounds = function(x, y, width, height) { this._bounds = x != null ? (this._bounds || new createjs.Rectangle()).setValues(x, y, width, height) : null; };
