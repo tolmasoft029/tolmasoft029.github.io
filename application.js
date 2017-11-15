@@ -6,7 +6,7 @@ function $extend(from, fields) {
 	return proto;
 }
 var base_Bg1 = function() {
-	nanofl.MovieClip.call(this,nanofl.Player.library.getItem("BG1"));
+	nanofl.MovieClip.call(this,nanofl.Player.library.getItem("movies/bg1"));
 };
 base_Bg1.__super__ = nanofl.MovieClip;
 base_Bg1.prototype = $extend(nanofl.MovieClip.prototype,{
@@ -16,22 +16,17 @@ var Bg1 = function() {
 };
 Bg1.__super__ = base_Bg1;
 Bg1.prototype = $extend(base_Bg1.prototype,{
-	init: function() {
-	}
-	,onEnterFrame: function() {
-	}
-	,onMouseDown: function(e) {
-	}
 });
 var Main = function(symbol) {
 	this.i = 0;
 	this.bg1_mov = new Bg1();
-	this.version = "1.0.0 #1";
+	this.version = "1.0.0 #2";
 	nanofl.MovieClip.call(this,symbol);
 };
 Main.__super__ = nanofl.MovieClip;
 Main.prototype = $extend(nanofl.MovieClip.prototype,{
 	init: function() {
+		console.log(this.stage);
 		this.flashVars = this.getFV(this.stage.canvas.baseURI);
 		this.addChild(this.bg1_mov);
 	}
