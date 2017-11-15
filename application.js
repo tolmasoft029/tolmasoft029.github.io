@@ -26,7 +26,7 @@ var Main = function(symbol) {
 Main.__super__ = nanofl.MovieClip;
 Main.prototype = $extend(nanofl.MovieClip.prototype,{
 	init: function() {
-		console.log(this.stage);
+		console.log(window.document);
 		this.flashVars = this.getFV(this.stage.canvas.baseURI);
 		this.addChild(this.bg1_mov);
 	}
