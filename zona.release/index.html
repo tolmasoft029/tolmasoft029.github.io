@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>zona</title>
+	</head>
+	<body style="background-color:#FFFFFF; margin:0; padding:0; font-size:0; overflow:hidden">
+		<div id="container" style="position:relative; display:inline-block; width:760px; height:650px"></div>
+		<script src="http://code.createjs.com/createjs-2014.12.12.combined.js"></script>
+		<script src="http://player.nanofl.com/nanofl-3.2.1.js"></script>
+		<script src="library.js"></script>
+		<script src="application.js"></script>
+		<script>
+			nanofl.Player.init(document.getElementById("container"), nanofl.DataTools.unserialize(serializedLibrary), 30, 'noScale');
+		</script>
+	</body>
+</html>
