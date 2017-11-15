@@ -1,76 +1,17 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
-<head>
-  
-  <meta charset="utf-8">
-  <meta http-equiv="imagetoolbar" content="no" />
-  
-  <script src="/scripts/blocked_img.js"></script>
-  <script src="/scripts/service.js"></script>
-  <script src="https://vk.com/js/api/xd_connection.js?2"></script>
-  <script src="/scripts/main.js"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/plugins/CSSPlugin.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/easing/EasePack.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
-
-
-  <link rel="stylesheet" href="/styles/main.css">
-
-</head>
-
-<body>
-
-	<img class="locked" src="images/Interfeys.png" />
-	
-	<div id="down_panel">
-		<img class="locked" src="images/down_panel.png"/>
-	</div>
-
-	<div id="down_zona">
-		<img src="images/down_zona.png" onMouseOver="animImage(this, 'images/down_zona_a.png')" onMouseOut="animImage(this, 'images/down_zona.png')" oncontextmenu="return false"/>
-	</div>
-
-	<div id="down_magaz">
-		<img src="images/down_magaz.png" onMouseOver="animImage(this, 'images/down_magaz_a.png')" onMouseOut="animImage(this, 'images/down_magaz.png')" oncontextmenu="return false"/>
-	</div>
-
-	<div id="down_profile">
-		<img src="images/down_prof.png" onMouseOver="animImage(this, 'images/down_prof_a.png')" onMouseOut="animImage(this, 'images/down_prof.png')" oncontextmenu="return false"/>
-	</div>
-
-	<div id="down_mods">
-		<img src="images/down_mods.png" onMouseOver="animImage(this, 'images/down_mods_a.png')" onMouseOut="animImage(this, 'images/down_mods.png')" oncontextmenu="return false"/>
-	</div>
-
-	<div id="down_prev">
-		<img src="images/top_prev.png" oncontextmenu="return false"/>
-	</div>
-	<div id="down_start">
-		<img src="images/top_start.png" oncontextmenu="return false"/>
-	</div>
-	<div id="down_next">
-		<img src="images/top_next.png" oncontextmenu="return false"/>
-	</div>
-	<div id="down_end">
-		<img src="images/top_end.png" oncontextmenu="return false"/>
-	</div>
-	<div id="kek">
-		<img class="locked" src="images/slot_top.png" />
-
-		<img id="top_mask" src="images/top_def.png"/>
-
-
-		<div id="top_slot_level"><p>20</p></div>
-		<div id="top_slot_name"><p>Владислав</p></div>
-	</div>
-
-	<img id="invite_mask" src="images/top_def.png"/>
-
-	<img id="menu_pda" src="images/pda.png" width="65" height="54" oncontextmenu="return false" onMouseOver="overPDA(this)" onMouseOut="outPDA(this)"/>
-	<img id="menu_ubezh" src="images/ubezh.png" width="77" height="51" oncontextmenu="return false" onMouseOver="overUbezh(this)" onMouseOut="outUbezh(this)"/>
-
-</body>
-
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>zona</title>
+	</head>
+	<body style="background-color:#FFFFFF; margin:0; padding:0; font-size:0; overflow:hidden">
+		<div id="container" style="position:relative; display:inline-block; width:760px; height:650px"></div>
+		<script src="http://code.createjs.com/createjs-2014.12.12.combined.js"></script>
+		<script src="http://player.nanofl.com/nanofl-3.2.1.js"></script>
+		<script src="library.js"></script>
+		<script src="application.js"></script>
+		<script>
+			nanofl.Player.init(document.getElementById("container"), nanofl.DataTools.unserialize(serializedLibrary), 30, 'noScale');
+		</script>
+	</body>
 </html>
