@@ -32,14 +32,13 @@ var Main = function(symbol) {
 Main.__super__ = nanofl.MovieClip;
 Main.prototype = $extend(nanofl.MovieClip.prototype,{
 	init: function() {
+		this.flashVars = this.getFV(this.stage.canvas.baseURI);
 		this.addChild(this.bg1_mov);
-		this.getFV(this.stage.canvas.baseURI);
 	}
 	,getFV: function(s) {
 		var a;
 		var b = { };
-		s = s.split("?")[1];
-		a = s.split("&");
+		a = s.split("?")[1].split("&");
 		var _g1 = 0;
 		var _g = a.length;
 		while(_g1 < _g) {
@@ -47,7 +46,6 @@ Main.prototype = $extend(nanofl.MovieClip.prototype,{
 			var a1 = a[i].split("=");
 			b[a1[0]] = a1[1];
 		}
-		console.log(b);
 		return b;
 	}
 });
