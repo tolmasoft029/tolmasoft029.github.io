@@ -6,7 +6,7 @@ function $extend(from, fields) {
 	return proto;
 }
 var base_Bg1 = function() {
-	nanofl.MovieClip.call(this,nanofl.Player.library.getItem("movies/bg1"));
+	nanofl.MovieClip.call(this,nanofl.Player.library.getItem("movies/bg1/bg1"));
 };
 base_Bg1.__super__ = nanofl.MovieClip;
 base_Bg1.prototype = $extend(nanofl.MovieClip.prototype,{
@@ -26,7 +26,6 @@ var Main = function(symbol) {
 Main.__super__ = nanofl.MovieClip;
 Main.prototype = $extend(nanofl.MovieClip.prototype,{
 	init: function() {
-		console.log(window.document);
 		this.flashVars = this.getFV(this.stage.canvas.baseURI);
 		this.addChild(this.bg1_mov);
 	}
