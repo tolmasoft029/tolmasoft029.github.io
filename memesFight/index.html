@@ -12,6 +12,7 @@
             object:focus { outline:none; }
             #flashContent { display:none; }
         </style>
+        <link href="//appsboost.sincere-games.ru/public/css/banners.css" rel="stylesheet">
             
         <script type="text/javascript" src="swfobject.js"></script>
         <script type="text/javascript">
@@ -122,6 +123,12 @@
             }
 
             window.onLoad = readySet("JS");
-    	</script>
+        </script>
+        <center><div id="banners" style="width:600px;"></center>
+
+        <script src="//appsboost.sincere-games.ru/public/banner_loader.js"></script>
+        <script> 
+            window.LoadBanners("banners", {application: 14 /*ID Вашего приложения в НАШЕЙ системе*/});
+        </script>
     </body>
 </html>
