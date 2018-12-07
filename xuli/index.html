@@ -70,7 +70,6 @@
             var jsReady = false;
             var asReady = false;
             var apiReady = 0;//0 - не готов, 1 - готов, 2 - ошибка;
-
             function isReady(unit) {
                 if(unit == "JS"){
                     return jsReady;  
@@ -78,7 +77,6 @@
                     return apiReady;
                 }   
             }
-
             function readySet(unit, errors) {
                 if(unit == "JS"){
                     jsReady = true;
@@ -99,7 +97,6 @@
                     }
                 }
             }
-
             //Что JS отправит AS'ту
             function sendToActionScript(value) {
                 // 
@@ -107,7 +104,6 @@
                 // 
                 document.getElementById("ExtIntProf").sendToActionScript(value);
             }
-
             //Что AS отправил JS'у
             function sendToJavaScript(value) {
                 // 
@@ -121,7 +117,6 @@
                     clientAPICallBackControl(value.methodName, value.controlType);
                 }
             }
-
             window.onLoad = readySet("JS");
     	</script>
         <center><div id="banners" style="width:600px;"></center>
