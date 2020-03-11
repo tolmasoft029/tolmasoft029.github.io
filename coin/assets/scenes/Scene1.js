@@ -71,6 +71,14 @@ class Scene1 extends Phaser.Scene {
 		localStorage.setItem('todos', this.fCoin.y);
 		localStorage.setItem('todos1', this.fCoin.x);
 		localStorage.setItem('score', this.score);
+		
+		this.tweens.add({
+			targets: this.fMonster,
+			duration: 200,
+			scaleX:1.2,
+			scaleY:1.2,
+			yoyo:true
+		});
 	}
 
 
