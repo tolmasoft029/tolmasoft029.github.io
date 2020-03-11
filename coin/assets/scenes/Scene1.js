@@ -17,10 +17,14 @@ class Scene1 extends Phaser.Scene {
 		
 		var coin = this.add.image(401.116, 118.869225, "textures", "coin");
 		
+		var score = this.add.text(662.9173, 13.756628, "Score: 0", {"fontFamily": "GNOMORIA_RUS REGULAR"});
+		
 		this.fMonster = monster;
 		this.fCoin = coin;
+		this.fScore = score;
 		
 	}
+	
 	
 	
 	
@@ -33,7 +37,20 @@ class Scene1 extends Phaser.Scene {
 		this.physics.add.existing(this.fMonster);
 		this.physics.add.existing(this.fCoin);
 		
+		this.score = 0;
+		
+		if(localStorage.getItem("score"))this.score = Number(localStorage.getItem("score"));
+		
+		
 		this.physics.add.overlap(this.fMonster, this.fCoin, this.hit, null, this);
+		//localStorage.clear();
+		if(localStorage.getItem("todos") && localStorage.getItem("todos1")){
+			console.log(localStorage);
+			this.fCoin.x = Number(localStorage.getItem("todos1"));
+			this.fCoin.y = Number(localStorage.getItem("todos"));
+		}
+		this.fScore.text = "Score: " + this.score;
+		
 	}
 
 	update() {
@@ -46,6 +63,14 @@ class Scene1 extends Phaser.Scene {
 	hit(){
 		this.fCoin.x = Phaser.Math.Between(100, 700);
 		this.fCoin.y = Phaser.Math.Between(100, 350);
+		
+		this.score += 1;
+		
+		this.fScore.text = "Score: " + this.score;
+		
+		localStorage.setItem('todos', this.fCoin.y);
+		localStorage.setItem('todos1', this.fCoin.x);
+		localStorage.setItem('score', this.score);
 	}
 
 

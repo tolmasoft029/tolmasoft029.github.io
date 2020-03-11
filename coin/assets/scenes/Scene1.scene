@@ -27,6 +27,17 @@
         "y": 118.86922454833984,
         "textureKey": "textures",
         "textureFrame": "coin"
+      },
+      {
+        "-id": "8307beed-71c0-4875-ae83-f0ce66a84856",
+        "-type": "Text",
+        "children": [],
+        "variableName": "score",
+        "variableField": true,
+        "x": 662.9172973632812,
+        "y": 13.756628036499023,
+        "text": "Score: 0",
+        "fontFamily": "GNOMORIA_RUS REGULAR"
       }
     ]
   },
