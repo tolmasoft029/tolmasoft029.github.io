@@ -22,7 +22,7 @@
         "-type": "Image",
         "children": [],
         "variableName": "coin",
-        "variableField": false,
+        "variableField": true,
         "x": 401.1159973144531,
         "y": 118.86922454833984,
         "textureKey": "textures",
